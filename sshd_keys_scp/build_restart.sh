@@ -1,8 +1,8 @@
 #!/bin/sh
 
-container_name="alex_nas_sshd"
-image_name="alex_key_sshd"
-userName="backupUser"
+container_name="container_nas_sshd"
+image_name="image_key_sshd"
+userName="scpUser"
 dockerPort="22"
 yes | ssh-keygen -t ed25519 -f ./keys/authorized_keys -C $userName
 
